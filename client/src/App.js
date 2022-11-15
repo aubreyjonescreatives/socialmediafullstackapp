@@ -5,13 +5,29 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
+import HomePage from './pages/HomePage'
+import Register from './pages/Register'
+import Login from './pages/Login'
+import UserDashboard from './pages/UserDashboard'
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello Home!</div>,
+    element: <HomePage/>,
+  },
+  {
+    path: "/register",
+    element: <Register/>,
+  },
+  {
+    path: "/login",
+    element: <Login/>,
+  },
+  {
+    path: "/userdashboard",
+    element: <UserDashboard/>,
   },
 ]);
 
