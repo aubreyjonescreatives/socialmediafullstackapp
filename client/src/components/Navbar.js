@@ -8,7 +8,7 @@ return (
     <>
     <div>logo</div>
     <div>links
-    <Link to="/?cat=home">HOME</Link>
+    <Link to="/?cat=homepage">HOME</Link>
     <Link to="/?cat=login">LOGIN</Link>
     <Link to="/?cat=register">SIGN UP</Link>
 
