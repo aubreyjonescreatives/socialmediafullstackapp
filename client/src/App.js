@@ -4,31 +4,64 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  Outlet,
 } from "react-router-dom";
+import Navbar from './components/Footer'
+import Footer from './components/Navbar'
 import HomePage from './pages/HomePage'
 import Register from './pages/Register'
 import Login from './pages/Login'
 import UserDashboard from './pages/UserDashboard'
+import Single from './pages/Single'
+
+
+
+
+const Layout = () => {
+  return (
+  <>
+  <Navbar /> 
+  <Outlet />
+  <Footer />
+  
+  </>
+  
+  
+  )
+  
+  
+  }
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage/>,
+    element: <Layout />, 
+    children: [
+      {
+        path: "/homepage",
+        element: <HomePage/>,
+      },
+      {
+      path: "/register",
+      element: <Register/>,
+      }, 
+      {
+        path: "/post/:id",
+        element: <Single/>,
+      },
+      {
+        path: "/login",
+        element: <Login/>,
+      },
+      {
+        path: "/userdashboard",
+        element: <UserDashboard/>,
+      },
+    ]
   },
-  {
-    path: "/register",
-    element: <Register/>,
-  },
-  {
-    path: "/login",
-    element: <Login/>,
-  },
-  {
-    path: "/userdashboard",
-    element: <UserDashboard/>,
-  },
+ 
 ]);
 
 
@@ -44,5 +77,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
