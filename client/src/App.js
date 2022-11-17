@@ -9,7 +9,7 @@ import {
 import Navbar from './components/Footer'
 import Footer from './components/Navbar'
 import HomePage from './pages/HomePage'
-import Register from './pages/Register'
+import CreateAccount from './pages/CreateAccount'
 import Login from './pages/Login'
 import UserDashboard from './pages/UserDashboard'
 import Single from './pages/Single'
@@ -44,8 +44,8 @@ const router = createBrowserRouter([
         element: <HomePage/>,
       },
       {
-      path: "/register",
-      element: <Register/>,
+      path: "/createaccount",
+      element: <CreateAccount/>,
       }, 
       {
         path: "/post/:id",

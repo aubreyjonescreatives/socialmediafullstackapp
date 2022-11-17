@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-const Register = () => {
+const CreateAccount = () => {
 
 return (
 <>
 
-<h1>Login</h1>
+<h1>Create an Account</h1>
 
 <form>
 
@@ -28,4 +28,4 @@ return (
 
 }
 
-export default Register; 
+export default CreateAccount; 

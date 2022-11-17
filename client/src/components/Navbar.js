@@ -9,9 +9,9 @@ return (
     <nav>
     <div>logo</div>
     <div>links
-    <Link to="/?cat=homepage">HOME</Link>
-    <Link to="/?cat=login">LOGIN</Link>
-    <Link to="/?cat=register">SIGN UP</Link>
+    <Link to="/">HOME</Link>
+    <Link to="/login">LOGIN</Link>
+    <Link to="/createaccount">SIGN UP</Link>
 
     </div>
     </nav>
