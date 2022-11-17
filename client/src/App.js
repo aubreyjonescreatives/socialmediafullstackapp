@@ -27,10 +27,10 @@ const Layout = () => {
   </>
   
   
-  )
+  );
   
   
-  }
+  };
 
 
 
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
     element: <Layout />, 
     children: [
       {
-        path: "/homepage",
+        path: "/",
         element: <HomePage/>,
       },
       {
