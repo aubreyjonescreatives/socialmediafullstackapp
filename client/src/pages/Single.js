@@ -1,5 +1,7 @@
 import React from 'react' 
-
+import EditIcon from '@mui/icons-material/Edit';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 
 const Single = () => {
@@ -10,18 +12,19 @@ return (
 
 // social media post image 
 
-    <img src=''/>
+    <AccountCircleIcon/>
     <div className="user">
 
 //user image
 
-    <img src=""/>
+    <img src="https://www.istockphoto.com/photo/summer-blue-sky-and-white-cloud-white-background-beautiful-clear-cloudy-in-sunlight-gm1328689113-412666631?phrase=sky" alt="sky"/>
     <div className="info">
     <span>John</span>
     <p>Posted 2 days ago</p>
     </div>
     <div className="edit">
-        <img src="" alt="" />
+        <EditIcon/>
+        <DeleteIcon/>
     </div>
     </div>
 </div>
