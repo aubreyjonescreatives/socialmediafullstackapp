@@ -69,7 +69,7 @@ img: '',
     <div className="content">
         <Link to={`/post/${post.id}`}>
         <h1>{post.title}</h1>
-        <p>{post.desk}</p>
+        <p>{post.desc}</p>
         </Link>
     </div>
 </div>
