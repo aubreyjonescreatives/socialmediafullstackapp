@@ -13,7 +13,7 @@ import CreateAccount from './pages/CreateAccount'
 import Login from './pages/Login'
 import UserDashboard from './pages/UserDashboard'
 import Single from './pages/Single'
-
+import Write from './pages/Write'
 
 
 
@@ -58,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: "/userdashboard",
         element: <UserDashboard/>,
+      },
+      {
+        path: "/write",
+        element: <Write/>,
       },
     ]
   },
