@@ -24,7 +24,8 @@ return (
         <h1>Publish</h1>
         <span><b>Status: </b> Draft</span>
         <span><b>Visibility: </b> Public</span>
-        <input type="file" name="" id="" />
+        <input style={{display:'none'}} type="file" id="file" name="" />
+        <label htmlFor="file">Upload Image</label>
     </div>
     <div className="item">
         <div>
