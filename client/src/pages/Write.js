@@ -26,10 +26,16 @@ return (
         <span><b>Visibility: </b> Public</span>
         <input style={{display:'none'}} type="file" id="file" name="" />
         <label htmlFor="file">Upload Image</label>
+        <div className="buttons">
+            <button>Save as a Draft</button>
+            <button>Update</button>
+            <button>Publish</button>
+        </div>
     </div>
     <div className="item">
         <div>
-           i2
+           <h1>Category</h1>
+           <input type="radio" name="cat" value="art" id="art" />
         </div>
     </div>
 </div>
