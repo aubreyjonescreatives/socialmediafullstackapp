@@ -20,8 +20,17 @@ return (
     </div>
 </div>
 <div className="menu">
-    <div className="item">i1</div>
-    <div className="item">i2</div>
+    <div className="item">
+        <h1>Publish</h1>
+        <span><b>Status: </b> Draft</span>
+        <span><b>Visibility: </b> Public</span>
+        <input type="file" name="" id="" />
+    </div>
+    <div className="item">
+        <div>
+           i2
+        </div>
+    </div>
 </div>
 
 
