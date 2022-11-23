@@ -2,17 +2,20 @@ import express from 'express'
 import mysql from 'mysql'
 import * as dotenv from 'dotenv'
 
-dotenv.config()
 
 
 const app = express()
+
+
+dotenv.config()
+
 
 
 const port = process.env.PORT 
 
 const db = mysql.createConnection({
     host:'localhost', 
-    user:'root', 
+    user: process.env.USERNAME, 
     password: process.env.DB_PASSWORD, 
     database:"test" 
 })
